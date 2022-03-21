@@ -1,0 +1,9 @@
+name : CI 
+
+on: [push]
+
+jobs : 
+ build : 
+  run-on: ubantu-latest
+  steps:
+    - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
